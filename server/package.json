@@ -1,0 +1,7 @@
+{
+  "name": "Cobrei",
+  "version": "1.0.0",
+  "description": "App cobrei apollo graphql server",
+  "main": "index.js",
+  "license": "MIT"
+}
