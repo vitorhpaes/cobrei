@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
 
-const databaseName = process.env.DATABASE_NAME
+const { DATABASE_NAME } = process.env
 
-mongoose.connect(`mongodb://localhost:27017/${databaseName}`)
+mongoose.connect(`mongodb://localhost:27017/${DATABASE_NAME}`)

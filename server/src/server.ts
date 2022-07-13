@@ -16,6 +16,7 @@ const server = new ApolloServer({
     }),
 })
 
-server.listen({ port: process.env.SERVER_PORT }, () =>
-    console.log(`server is running on port ${process.env.SERVER_PORT}`)
+const { SERVER_PORT } = process.env
+server.listen({ port: SERVER_PORT }, () =>
+    console.log(`server is running on port ${SERVER_PORT}`)
 )
