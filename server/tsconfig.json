@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "noEmit": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["es2018", "esnext.asynciterable"],
+    "forceConsistentCasingInFileNames": true,
+    "plugins": [{ "name": "nexus/typescript-language-service" }],
+    "typeRoots": ["node_modules/@types", "@types"],
+    "paths": {
+      "@app/*": ["./"],
+      "@src/*": ["src/*"],
+      "@app/types/*": ["./@types/*"],
+      "@mongodb-models/*": ["src/database/models/*"],
+    },
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist"],
+}
