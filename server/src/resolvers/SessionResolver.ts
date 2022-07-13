@@ -2,9 +2,9 @@ import { Arg, Mutation, Resolver } from 'type-graphql'
 import bcrypt from 'bcryptjs'
 import { sign } from 'jsonwebtoken'
 
-import MongoUser from '../database/models/User'
-import Auth from '../schemas/Auth'
-import AuthConfig from '../config/auth'
+import MongoUser from '@models/User'
+import Auth from '@schemas/Auth'
+import AuthConfig from '@config/auth'
 
 @Resolver(Auth)
 class SessionResolver {
@@ -21,9 +21,9 @@ class SessionResolver {
             throw new Error('Incorrect email/password combination.')
         }
 
-        const passwordMatched = await bcrypt.compare(password, user.password)
+        const isValidPassword = await bcrypt.compare(password, user.password)
 
-        if (!passwordMatched) {
+        if (!isValidPassword) {
             throw new Error('Incorrect email/password combination.')
         }
 

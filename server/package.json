@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsnd --respawn --transpile-only src/server.ts",
-    "install:reset": "rm -rf node_modules && yarn install"
+    "install:reset": "rm -rf node_modules && yarn install",
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
@@ -34,9 +35,9 @@
     "dotenv": "^16.0.1",
     "graphql": "^15.3.0",
     "jsonwebtoken": "^8.5.1",
+    "module-alias": "^2.2.2",
     "mongoose": "^6.4.4",
     "mongoose-paginate-v2": "^1.7.0",
-    "normalize-mongoose": "^0.0.1",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^1.1.1"
   }

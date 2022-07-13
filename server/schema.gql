@@ -14,21 +14,19 @@ The javascript `Date` as string. Type represents date and time as the ISO Date s
 scalar DateTime
 
 type Mutation {
+  createUser(name: String!, password: String!, username: String!): User!
   signIn(password: String!, username: String!): Auth!
 }
 
-interface Node {
-  id: ID!
-}
-
 type Query {
-  users: [User!]!
+  getAllUsers: [User!]!
+  getByUsername(username: String!): User!
 }
 
-type User implements Node {
+type User {
   createdAt: DateTime
   id: ID!
-  lastLogin: DateTime!
+  lastLogin: DateTime
   name: String!
   password: String!
   updatedAt: DateTime

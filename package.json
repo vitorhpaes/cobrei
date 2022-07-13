@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@types/module-alias": "^2.0.1"
+  }
+}

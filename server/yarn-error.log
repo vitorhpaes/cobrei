@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\vitor\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add -D @types/normalize-mongoose
+  C:\Program Files\nodejs\node.exe C:\Users\vitor\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add module-aliases
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\vitor\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\xampp\php;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\ComposerSetup\bin;C:\Program Files\MySQL\MySQL Utilities 1.6;C:\Program Files\dotnet;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;%NVM_HOME%;%NVM_SYMLINK%;C:\Program Files\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\vitor\AppData\Local\Microsoft\WindowsApps;C:\Users\vitor\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\vitor\AppData\Roaming\Composer\vendor\bin;C:\Users\vitor\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\vitor\AppData\Roaming\npm
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fnormalize-mongoose: Not found
+  Error: https://registry.yarnpkg.com/module-aliases: Not found
       at Request.params.callback [as _callback] (C:\Users\vitor\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
       at Request.self.callback (C:\Users\vitor\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
       at Request.emit (events.js:376:20)
@@ -65,7 +65,6 @@ npm manifest:
       "jsonwebtoken": "^8.5.1",
       "mongoose": "^6.4.4",
       "mongoose-paginate-v2": "^1.7.0",
-      "normalize-mongoose": "^0.0.1",
       "reflect-metadata": "^0.1.13",
       "type-graphql": "^1.1.1"
     }
@@ -2301,11 +2300,6 @@ Lockfile:
     integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
     dependencies:
       whatwg-url "^5.0.0"
-  
-  normalize-mongoose@^0.0.1:
-    version "0.0.1"
-    resolved "https://registry.yarnpkg.com/normalize-mongoose/-/normalize-mongoose-0.0.1.tgz#be0928bb97341c7e11c1c80e22b901b63c9c357d"
-    integrity sha512-yaEPhQKy3JWLhSzHbQFbLvJc/8t3w0gMHKsGtx4C/YK/kZuMZ1kjZtY9FgMzLra0Pj3btwCd5iRqeYKZL7C32A==
   
   normalize-path@^3.0.0, normalize-path@~3.0.0:
     version "3.0.0"

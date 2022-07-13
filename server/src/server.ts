@@ -1,4 +1,5 @@
 import 'reflect-metadata'
+import './config/aliases'
 
 import './config/dotenv'
 

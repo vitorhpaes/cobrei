@@ -16,10 +16,11 @@
     "plugins": [{ "name": "nexus/typescript-language-service" }],
     "typeRoots": ["node_modules/@types", "@types"],
     "paths": {
-      "@app/*": ["./"],
       "@src/*": ["src/*"],
+      "@config/*": ["src/config/*"],
+      "@schemas/*": ["src/schemas/*"],
+      "@models/*": ["src/database/models/*"],
       "@app/types/*": ["./@types/*"],
-      "@mongodb-models/*": ["src/database/models/*"],
     },
   },
   "include": ["**/*.ts"],

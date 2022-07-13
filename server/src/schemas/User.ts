@@ -1,10 +1,8 @@
 import { Field, ID, ObjectType } from 'type-graphql'
 
 import { UserProps } from '@app/types/User'
-import Node from './Node'
-
-@ObjectType({ implements: Node })
-class User implements UserProps, Node {
+@ObjectType()
+class User implements UserProps {
     @Field((_type) => ID, { nullable: false })
     id: any
 
@@ -17,7 +15,7 @@ class User implements UserProps, Node {
     @Field()
     password: string
 
-    @Field()
+    @Field({ nullable: true })
     lastLogin: Date
 
     @Field({ nullable: true })

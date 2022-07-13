@@ -1,5 +1,4 @@
 import mongoose, { Schema } from 'mongoose'
-import normalize from 'normalize-mongoose'
 import mongoosePaginate from 'mongoose-paginate-v2'
 import { UserProps, UserPropsDocument } from '@app/types/User'
 
@@ -27,7 +26,7 @@ const userSchema = new Schema<UserPropsDocument>({
     },
     lastLogin: {
         type: Date,
-        required: true,
+        required: false,
     },
     createdAt: {
         type: Date,
@@ -43,7 +42,6 @@ const userSchema = new Schema<UserPropsDocument>({
 
 const User = mongoose.model<UserProps>('User', userSchema)
 
-userSchema.plugin(normalize)
 userSchema.plugin(mongoosePaginate)
 
 export default User
